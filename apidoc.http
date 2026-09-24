@@ -1,0 +1,25 @@
+#api call for list doctors
+###
+GET http://127.0.0.1:8000/doctors/
+Accept: application/json
+
+#api call for list doctors
+###
+POST http://127.0.0.1:8000/doctors/
+Content-Type: application/json
+
+{
+    "name" : "godwin",
+    "specialization" : "cardiology",
+    "fee" : 1000,
+    "qualification" : "mbbs",
+    "email" : "godu@gmail.com"
+}
+
+# Api for fetching doctor detail
+
+#api for updating doctor
+
+# doctor delete
+
+# doctors filter
