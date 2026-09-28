@@ -3,7 +3,7 @@
 GET http://127.0.0.1:8000/doctors/
 Accept: application/json
 
-#api call for list doctors
+#api call for create doctors
 ###
 POST http://127.0.0.1:8000/doctors/
 Content-Type: application/json
@@ -23,3 +23,22 @@ Content-Type: application/json
 # doctor delete
 
 # doctors filter
+
+# v2 end point
+#api call for list doctors
+###
+GET http://127.0.0.1:8000/v2/doctors/
+Accept: application/json
+
+#api call for create doctors
+###
+POST http://127.0.0.1:8000/v2/doctors/
+Content-Type: application/json
+
+{
+    "name" : "godwin",
+    "specialization" : "cardiology",
+    "fee" : 1000,
+    "qualification" : "mbbs",
+    "email" : "goduss@gmail.com"
+}
