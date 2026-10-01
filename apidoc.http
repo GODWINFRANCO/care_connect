@@ -36,9 +36,38 @@ POST http://127.0.0.1:8000/v2/doctors/
 Content-Type: application/json
 
 {
-    "name" : "godwin",
+    "name" : "shijin",
     "specialization" : "cardiology",
     "fee" : 1000,
     "qualification" : "mbbs",
-    "email" : "goduss@gmail.com"
+    "email" : "shijin@gmail.com"
 }
+
+#api call for update doctors
+###
+PuT http://127.0.0.1:8000/v2/doctors/2/
+Content-Type: application/json
+
+{
+    "name" : "godwin franco",
+    "specialization" : "cardiology",
+    "fee" : -2000,
+    "qualification" : "mbbs",
+    "email" : "godussss@gmail.com"
+}
+
+#api call for create admin-register
+###
+POST  http://127.0.0.1:8000/v2/admin-register/
+Content-Type: application/json
+
+{
+    "username":"edwin",
+    "email":"edwin@gmail.com",
+    "password":"edwin"
+}
+
+#api call for list bookings
+###
+GET http://127.0.0.1:8000//
+Accept: application/json
